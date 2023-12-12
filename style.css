@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&family=Rubik+Wet+Paint&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Pridi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*landing page*/
+body{
+    padding-top:40px ;
+}
+.bg-image{
+    background-image: url(assets/heroSectionThree.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridLayout{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo{
+    padding-top: 25px;
+    margin-left: 0;
+    
+}
+.headerContent ul li a::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+   border-radius: 25px;
+   transform: scaleX(0);
+   background: #000000;
+    transform-origin:right ;
+    transition: transform 0.3s ease;
+}
+.headerContent ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin:left ;
+}
+.headerContent ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-bottom: 25px;
+    position: relative;
+}
+.headerContent ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20PX;
+}
+.headerContent{
+    padding-top: 35px;
+    margin-right: 0;
+    font-size: 20px;
+    font-family: 'Port Lligat Slab', serif;  
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: background-color 0.4s ease-in-out;
+    box-shadow:0px 0px 5px 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.containerContent{
+    background-color: #ffffff;
+}
+.projectName h1{
+    font-size: 70px;
+    color: white;
+    padding-top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Rubik Wet Paint' ;
+    text-shadow:black;
+    
+}
+
+.landingPageButton{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+}
+.buttonOne{
+    padding: 8px 16px;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+    border: 3px white solid;
+}
+.buttonOne:hover{
+    background-color:#0C356A;
+}
+
+
+/*CREATORS*/
+
+h2{
+    text-align: center;
+    margin-top: 35px;
+   font-family: 'Pridi', serif;
+    font-weight: 600;
+}
+
+
+/*flip card*/
+.fourArchitectures{
+    display: flex;
+    align-items: center;
+}
+.containerOne{
+    width: 25%;
+    padding:10px;
+}
+.cardOne{
+    width: 250px;
+    height: 350px;
+    margin: 50px auto 0;
+    perspective: 1000px;
+}
+.card-inner{
+    width: 250%;
+    height: 350%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.frontOne,.backOne{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frontOne{
+    background: url(assets/smith.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.frontOne h4{
+color: white;
+font-size: 30px;
+font-weight: 600;
+font-family: 'Pridi', serif;;
+}
+
+.frontOne button{
+    width: 140px;
+    border: 1px solid #fff;
+    background:transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor:pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Pridi', serif;
+}
+.backOne{
+    background: #000000;
+    color: white;
+    padding: 20px 20px;
+    transform: rotateY(180deg);
+}
+.backOne h5{
+font-size: 18px;
+line-height: 25px;
+margin-bottom: 10px;
+font-family: 'Pridi', serif;
+}
+.icons img{
+    display: flex;
+    align-items:center;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+
+.cardOne:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+/*Flipcard2*/
+
+.containerTwo{
+    width: 25%;
+    padding:10px;
+   
+}
+.cardTwo{
+    width: 250px;
+    height: 350px;
+    margin: 50px auto 0;
+    perspective: 1000px;
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.frontTwo,.backTwo{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frontTwo{
+    background: url(assets/oviya.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.frontTwo h4{
+color: white;
+font-size: 30px;
+font-weight: 600;
+font-family: 'Pridi', serif;
+}
+.frontTwo button{
+    width: 140px;
+    border: 1px solid #fff;
+    background:transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor:pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Pridi', serif;
+}
+.backTwo{
+    background: #000000;
+    color: white;
+    padding: 20px 20px;
+    transform: rotateY(180deg);
+}
+.backTwo h5{
+font-size: 18px;
+line-height: 25px;
+margin-bottom: 10px;
+font-family: 'Pridi', serif;
+}
+.icons{
+    display: flex;
+    align-items:center;
+    margin-top: 30px;
+    margin-left: 60px;
+    gap: 30px;
+}
+.cardTwo:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+/*flipcard3*/
+
+.containerThree{
+    width: 25%;
+    padding:10px;
+}
+.cardThree{
+    width: 250px;
+    height: 350px;
+    margin: 50px auto 0;
+    perspective: 1000px;
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.frontThree,.backThree{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frontThree{
+    background: url(assets/santner.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.frontThree h4{
+color: white;
+font-size: 30px;
+font-weight: 600;
+font-family: 'Pridi', serif;
+}
+.frontThree button{
+    width: 140px;
+    border: 1px solid #fff;
+    background:transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor:pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Pridi', serif;
+}
+.backThree{
+    background: #000000;
+    color: white;
+    padding: 20px 20px;
+    transform: rotateY(180deg);
+}
+.backThree h5{
+font-size:18px;
+line-height: 25px;
+margin-bottom: 10px;
+font-family: 'Pridi', serif;
+}
+.icons{
+    display: flex;
+    align-items:center;
+    margin-top: 30px;
+    margin-left: 60px;
+    gap: 30px;
+}
+.cardThree:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+/*flipcard4*/
+
+.containerFour{
+    width: 25%;
+    padding:10px;
+}
+.cardFour{
+    width: 250px;
+    height: 350px;
+    margin: 50px auto 0;
+    perspective: 1000px;
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.frontFour,.backFour{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frontFour{
+    background: url(assets/varshi.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.frontFour h4{
+color: white;
+font-size: 30px;
+font-weight: 600;
+font-family: 'Pridi', serif;
+}
+.frontFour button{
+    width: 140px;
+    border: 1px solid #fff;
+    background:transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor:pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Pridi', serif;
+}
+.backFour{
+    background: #000000;
+    color: white;
+    padding: 20px 20px;
+    transform: rotateY(180deg);
+}
+.backFour h5{
+font-size: 18px;
+line-height: 25px;
+margin-bottom: 10px;
+font-family: 'Pridi', serif;
+}
+.icons{
+    display: flex;
+    align-items:center;
+    margin-top: 30px;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 0;
+}
+.cardFour:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+.learnMoreTwo{
+    background-color: #000000;
+     color: white;
+     padding: 10px 25px;
+     font-size: larger;
+     width: 12%;
+     margin-top: 60px;
+     margin-left: 44%;
+ }
+ .learnMoreTwo:hover{
+    background-color: #0C356A;
+    color: #fff;
+
+ }
+
+ /*portfolio*/
+
+ .portfolioOne{
+    margin-top: 30px;
+    border: 4px solid black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: relative;
+ }
+ .portfolioOneContent{
+    padding: 30px;
+ }
+ .portfolioOneContent h4{
+        font-size: 18px;
+        font-family: 'Pridi', serif;;
+        
+ }
+ .portfolioOneContent h3{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Pridi', serif;
+ }
+ .highlights{
+    margin-left: 100px;
+ }
+ .pricing{
+    display: flex;
+    margin-top: 20px;
+ }
+.follow a{
+    color: #fff;
+    background-color: #fff;
+}
+ .bookings{
+    display: flex;
+    margin-top: 20px;
+ }
+.follow{
+    margin-left: 70px;
+}
+.customers{
+    margin-left: 70px;
+}
+.ratings{
+    margin-left: 70px;
+}
+.happy{
+    padding-bottom: 50px;
+}
+
+
+body{
+    background: white;
+}
+.review{
+    display: flex;
+    position: relative;
+}
+
+.reviewCard{
+   height: 470px;
+   margin: 20px;
+   border-radius: 3px;
+   box-shadow: 5px 5px 20px black;
+   overflow: hidden;
+}
+.reviewCard img{
+    height: 470px;
+    width: 400px;
+    border-radius: 3px;
+    transition: .5s;
+}
+.intro{
+    height: 70px;
+    width: 364px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27,27,27, .5);
+    color: white;
+    bottom: 20px;
+    transition: .5s;
+}
+.intro h3{
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Pridi', serif;
+}
+.intro p{
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-family: 'Pridi', serif;
+}
+.span{
+    font-weight: bold;
+}
+
+.reviewCard:hover{
+    cursor: pointer;
+}
+.reviewCard:hover .intro{
+    height: 220px;
+    bottom: 20px;
+    background: #000000;   
+}
+.reviewCard:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.reviewCard:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/*Two*/
+
+
+
+.review2{
+    display: flex;
+    position: relative;
+}
+
+.reviewCard2{
+   height: 300px;
+   margin: 20px;
+   border-radius: 3px;
+   box-shadow: 5px 5px 20px black;
+   overflow: hidden;
+}
+.reviewCard2 img{
+    height: 300px;
+    width: 570px;
+    border-radius: 3px;
+    transition: .5s;
+    background-size: cover;
+}
+.intro2{
+    height: 70px;
+    width: 565px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27,27,27, .5);
+    color: white;
+    bottom: 20px;
+    transition: .5s;
+}
+.intro2 h3{
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Pridi', serif;
+}
+.intro2 p{
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-family: 'Pridi', serif;
+}
+.span{
+    font-weight: bold;
+}
+
+.reviewCard2:hover{
+    cursor: pointer;
+}
+.reviewCard2:hover .intro2{
+    height: 180px;
+    bottom: 20px;
+    background: #000000;   
+}
+.reviewCard2:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.reviewCard2:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.learnMoreThree{
+    background-color: #000000;
+     color: white;
+     padding: 10px 25px;
+     font-size: larger;
+     width: 12%;
+     margin-top: 60px;
+     margin-left: 44%;
+ }
+ .learnMoreThree:hover{
+    background-color: #0C356A;
+    color: #fff;
+ }
+
+/*Gallery*/
+.wrapper{
+    margin-top: 30px;
+}
+.parent{
+
+    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+    align-items: stretch;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.child{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: all 1.1s;
+    gap: 20px;
+}
+.parent:hover .child{
+    transform: scale(1.2);
+}
+.bg-One{
+    background: url(assets/gallery1.png);
+    height: 300px;
+    width: 490px;
+}
+.bg-Two{
+    background: url(assets/gallery2.png);
+    height: 300px;
+    width: 700px;
+}
+.bg-Three{
+    background: url(assets/gallery3.png);
+     height: 375px;
+     width:700px ;
+    display: flex;
+    align-content: flex-start;
+     
+}
+.mainParent{
+    display: flex;
+}
+.parentTwo{
+    margin-right: 5px;
+}
+.parentThree{
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.bg-Four{
+    background: url(assets/gallery4.png);
+    height: 500px;
+    width: 490px;
+}
+.bg-Five{
+    background: url(assets/gallery5.png);
+    width: 700px;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-Six{
+    background: url(assets/gallery6.png);
+    height: 220px;
+    width: 490px;
+}
+
+.learnMoreFour{
+    background-color: #000000;
+     color: white;
+     padding: 10px 25px;
+     font-size: larger;
+     width: 12%;
+     margin-top: 60px;
+     margin-left: 44%;
+ }
+ .learnMoreFour:hover{
+    background-color: #0C356A;
+    color: #fff;
+ }
+
+
+ /*our teams*/
+
+ .ourTeamsOne{
+    display:flex;
+    gap: 90px;
+    margin-top: 30px;
+ }
+ .ourTeamsTwo{
+    display: flex;
+    gap: 90px;
+ }
+ .team1{
+    width: 25%;
+    object-fit: cover;
+    margin-top:40px; 
+ }
+ .team2{
+    width: 25%;
+    object-fit: cover;
+    margin-bottom: 5px;
+ }
+ .team3{
+    width: 25%;
+    object-fit: cover;
+    margin-top: 30px; 
+ }
+ .team4{
+    width: 25%;
+    object-fit: cover;
+    margin-top: 5px; 
+ } 
+.team5{
+   width: 25%;
+    margin-top: 30px;
+ }
+ .team6{
+    width: 25%;
+    margin-top: 20px;
+    
+ }
+ .team7{
+   width: 25%;
+ }
+ .team8{
+    width: 25%;
+ }      
+
+
+ /*CONTACT*/
+
+
+ .contactUs{
+    display: flex;
+    margin-top: 30px;
+ }
+ .contactContent{
+    width: 50%;
+ }
+ .contactContent h3{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Pridi', serif;
+ }
+ .contactName{
+    width: 100%;
+    margin-top: 50px;
+ }
+ .contactName1{
+    background-color:white;
+    color: #000000;
+    padding: 20px;
+    width: 45%;
+ }
+ .contactName2{
+    background-color:white;
+    color: #000000;
+    padding: 20px;
+    width: 45%;
+    margin-left: 20px;
+ }
+ .contactNumber{
+    width: 100%;
+    margin-top: 25px;
+ }
+ .contactNumber1{
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+    width: 45%;
+ }
+
+ .contactNumber2{
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+    width: 45%;
+    margin-left: 20px;
+ }
+.contactMessage{
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 20px;
+    color: #000000;
+    padding-left: 0;
+}
+.learnMoreFive{
+    margin-top: 12px;
+    width: 93%;
+    padding: 20px;
+    background-color:black;
+    color: white;
+}
+.learnMoreFive:hover{
+    background-color: #0C356A;
+    color: #fff;
+}
+.contactImage img{
+   height: 515px;
+   width: 600px;
+   object-fit: cover;
+    
+}
+
+.contactName1::placeholder{
+    color: #000000;
+}
+.contactName2::placeholder{
+    color: #000000;
+}
+.contactNumber1::placeholder{
+    color: #000000;
+}
+.contactNumber2::placeholder{
+    color: #000000;
+}
+.contactMessage2::placeholder{
+    color: #000000;
+   
+}
+.contactMessage2{
+    padding: 20px;
+}
+
+
+/*Footer*/
+
+.bg-color{
+    background-color: #000000;
+    color: #fff;
+}
+.footerSection{
+    display: flex;
+    margin-top: 50px;
+}
+.about{
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    width: 50%;
+    margin-bottom: 50px;
+    font-family: 'Pridi', serif;
+}
+.about h6{
+    margin-top: 30px;
+    font-family: 'Pridi', serif;
+}
+.contactInside{
+    margin-top: 25px;
+}
+.contact h6{
+    padding: 5px 0px;
+}
+.followusInside{
+    margin-top: 25px;
+}
+.followus h6{
+    padding: 5px 0px;
+}
+.contact{
+    margin-top: 50px;
+    width: 25%;
+    padding-left: 40px;
+    margin-bottom: 50px;
+    font-family: 'Pridi', serif;
+}
+.followus{
+   margin-top: 50px;
+   width: 25%;
+   margin-bottom: 50px;
+   font-family: 'Pridi', serif;
+}
+
+.foot{
+    display: flex;
+    width: 100%;
+}
+
+.foot h4{
+    color: #000000;
+}
+.footOne{
+    width: 50%;
+    padding: 10px 0px ;
+    font-size: 16px;
+    text-align: start;
+    font-family: 'Pridi', serif;
+
+}
+.footTwo{
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 16px;
+    text-align: end;
+    font-family: 'Pridi', serif;
+}
