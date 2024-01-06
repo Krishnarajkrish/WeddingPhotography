@@ -25,13 +25,17 @@
                      <img src="assets/logo2.png" alt="" width="160px" height="60px">
             </div>
             <div class="headerContent">
-              <ul>
+              <ul class="contentul">
                   <li><a href="#HOME">HOME</a></li>
                  <li><a href="#CREATORS">CREATORS</a></li>
                  <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
                  <li><a href="#GALLERY">GALLERY</a></li>
                  <li><a href="#CONTACT">CONTACT</a></li>
               </ul>
+            </div>
+            <div>
+            <img src="assets/hamburger.png" alt="" class="hamburger">
+            <img src="assets/mdi_hamburger-open.png" alt="" class="hamburgerOpen">
             </div>
           </div>
           </div>
@@ -194,7 +198,7 @@
                     </div>
 
                     <div class="bookings">
-                     <div>
+                     <div class="booking1">
                     <h3>For Bookings</h3>
                     <h4><img src="assets/phone.png" alt="">9865685327</h4>
                   </div>
@@ -418,6 +422,21 @@
   </div>
 </div>
 </footer>
-
-</body>
+<script>
+  let image=document.querySelector(".hamburger");
+  let ultag=document.querySelector(".contentul");
+  let Openimage=document.querySelector(".hamburgerOpen");
+  let containerContent=document.querySelector(".containerContent")
+  image.addEventListener("click",()=>{
+    ultag.style.display="block";
+    Openimage.style.display="block";
+    image.style.display="none";
+  })
+  Openimage.addEventListener("click",()=>{
+    ultag.style.display="none";
+    Openimage.style.display="none";
+    image.style.display="block";
+  })
+</script> 
+</body>  
 </html>

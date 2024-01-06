@@ -8,7 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /*landing page*/
 body{
     padding-top:40px ;
@@ -532,4 +534,174 @@ font-family: 'Pridi', serif;
     font-size: 16px;
     text-align: end;
     font-family: 'Pridi', serif;
+}
+.hamburger ,.hamburgerOpen{
+    display: none;
+}
+
+/*--------------------------Responsive----------------------------*/
+@media screen and (max-width:500px){
+    .fourArchitectures ,.portfolioOne ,.review,.review2 ,.ourTeamsOne,.ourTeamsTwo,.contactUs,.mainParent,.pricing{
+        display: block;
+    }
+    .contentul{
+        display: none;
+        margin-top: 50px;
+    }
+    .logo img{
+        width: 120px;
+        height: 50px;
+    }
+    .hamburger{
+        display: block;
+        margin-top: 20px;
+    }
+    .hamburgerOpen{
+        margin-top: 20px;
+    }
+    .headerContent ul li a{
+        padding: 0px;
+    }
+    .bg-image{
+           background-image: url(assets/gallery11.png);
+           background-position: center;
+           object-fit: cover;
+    }
+    .projectName h1{
+        font-size: 40px;
+        color: #000000;
+    }
+    .buttonOne{
+        color: #000000;
+        border: 3px black solid;
+    }
+    .buttonOne:hover{
+        background-color: #fff;
+    }
+    .learnMoreTwo{
+        width:50%;
+        margin-left: 25%;
+    }
+    .containerOne,.containerTwo,.containerThree,.containerFour{
+        width: 100%;
+    }
+    .portfolioOne{
+        height: 100%;
+    }
+    .portfolioOneContent{
+        position: relative;
+    }
+    .portfolioOneImage img{
+         width: 325px;
+         height: 350px;
+    }
+    .highlights{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .follow,.customers,.ratings{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .bookings{
+        flex-wrap: wrap;
+    }
+    .follow{
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    .ratings{
+        padding-left: 20px;
+    }
+    .learnMoreThree{
+        margin-left: 30%;
+        width: 180px;
+    }
+    .bg-One{
+        width: 330px;
+        object-fit: cover;
+        background-position: center;
+    }
+    .bg-Two{
+        width: 330px;
+        object-fit: cover;
+    }
+    .bg-Three ,.bg-Five,.bg-Four,.bg-Six{
+        width: 330px;
+        background-position: center;
+        object-fit: cover;
+    }
+    .learnMoreFour{
+        margin-left: 30%;
+        width: 150px;
+    }
+    .team1{
+        margin-left: 50px;
+    }
+    .team2,.team4{
+        margin-left: 70px;
+    }
+    .team3{
+        margin-left: 20px;
+    }
+    .team5,.team8{
+        margin-left: 50px;
+    }
+    .team6,.team7{
+        margin-left: 70px;
+    }
+    .contactContent{
+        width: 100%;
+    }
+    .contactContent h3{
+        font-size: 25px;
+    }
+    .contactImage img{
+        display: none;
+    }
+    .about{
+        width: 100%;
+    }
+    .contact,.followus{
+        width: 50%;
+    }
+    .contact{
+        padding-left: 0;
+        margin-top: 0;
+    }
+    .followus{
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    .footerSection{
+        flex-wrap: wrap;
+    }
+    .contactMessage2{
+        width: 320px;
+    }
+    .reviewCard{
+        position: relative;
+    }
+    .intro{
+        bottom: 0px;
+        width: 300px;
+    }
+    .reviewCard:hover .intro{
+        bottom: 0px;
+    }
+    .reviewCard2{
+        position: relative;
+    }
+    .intro2{
+        bottom: 0px;
+        width: 300px;
+    }
+    .reviewCard2:hover .intro2{
+        bottom: 0px;
+    }
+    .reviewCard2 img{
+        width: 330px;
+        background-position: center;
+        object-fit: cover;
+    }
 }
