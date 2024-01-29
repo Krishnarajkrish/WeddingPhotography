@@ -705,3 +705,51 @@ font-family: 'Pridi', serif;
         object-fit: cover;
     }
 }
+
+@media  screen and (max-width:400px) {
+    .portfolioOneImage img{
+        width: 315px;
+    }
+    .contactMessage2{
+        width: 310px;
+    }
+    .learnMoreFive{
+        width: 310px;
+    }
+}
+
+@media  screen and (max-width:380px){
+    .portfolioOneImage img{
+        width: 300px;
+    }
+    .bookings{
+        display: block;
+    }
+    .bg-One ,.bg-Two,.bg-Three,.bg-Four,.bg-Five,.bg-Six{
+        width: 300px;
+    }
+    .contactMessage2{
+        width: 300px;
+    }
+    .learnMoreFive{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .portfolioOneImage img{
+        width: 275px;
+    } 
+    .bg-One ,.bg-Two,.bg-Three,.bg-Four,.bg-Five,.bg-Six{
+        width: 280px;
+    }
+    .contactMessage2{
+        width: 280px;
+    }
+    .learnMoreFive{
+        width: 280px;
+    }
+    .intro ,.intro2{
+        width: 280px;
+    }
+}
